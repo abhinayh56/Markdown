@@ -1,16 +1,13 @@
 # Control System
 
-1. Classical control
-2. Modern control
+**Types of control system**
+1. Open loop control
+2. Closed loop control
+3. Hybrid control
 
-asasas
-1. P
-2. D
-3. PD
-4. PI
-5. PID
-    1. Standard form
-    2. Parallel form
+**Methods to design contro lsystem**
+1. Classical control method
+2. Modern control method
 
 **Miscellaneous**
 1. P
