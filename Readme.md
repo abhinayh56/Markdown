@@ -116,7 +116,7 @@ Precede each line with a number for ordered list
    2. This is item 3.2
 4. This is item 4
 
-## 7Topic 7: Task lists
+## Topic 7: Task lists
 - [ ] This is task 1
 - [x] This is task 2
 - [x] #739
