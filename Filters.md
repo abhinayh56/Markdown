@@ -1,24 +1,14 @@
-1. Filters
-   1. IIR
-      1. LPF_1 (Butterworth)
-      2. HPF_1 (Butterworth)
-      3. LPF_2 (Butterworth)
-      4. HPF_2 (Butterworth)
-      5. BPF_2 (Butterworth)
-      6. BSF_2 (Butterworth)
-      7. APF (All Pass Filter)
-      8. QF_1 (Butterworth)
-      9. QF_2 (Butterworth)
-      10. SRL
-      11. FLC
-      12. WFLC
-      13. BMFLC
-   2. FIR
-      1. MA
-      2. Median
-      3. 
+# Filters
+**Types of filters**
+1. Low-Pass Filter
+2. High-Pass Filter
+3. Band-Pass Filter
+4. Band-Stop Filter (Notch Filter / Band Reject Filter)
+5. All-Pass Filter
+6. Active Filter
+7. Passive Filter
 
-## Filter design methods
+**Methods for filter design**
 1. Butterworth
 2. Chebyshev
    1. Chebyshev type 1
@@ -33,19 +23,10 @@
 10. KHN (Kerwin-Huelsman-Newcomb)
 11. Digtal FIR (Finite Impulse Response)
 12. DIGITAL IIR (Infinite Impulse Response)
-13. Bilinea Transformation
+13. Bilinear Transformation
 14. Impulse Invariant
 
-## Types of filters
-1. Low-Pass Filter
-2. High-Pass Filter
-3. Band-Pass Filter
-4. Band-Stop Filter (Notch Filter / Band Reject Filter)
-5. All-Pass Filter
-6. Active Filter
-7. Passive Filter
-
-## Methods of converting continuous time system into discrete time system
+**Methods of converting continuous system to discrete**
 1. Bilinear Transformation
 2. Impulse Invariant Transformation
 3. Zero-Order_Hold (ZOH)
@@ -62,17 +43,39 @@
 14. Numerical Approximations of Differential Equations
 15. Discretization of State Variable Models
 
-## Process of Digital Filter Design
-1. Low-Pass Filter
-   1. Specify requirements
-      - Cutoff frequency ($f_c$)
-      - Sampling frequency ($f_s$)
-      - Passband Ripple ($\delta_p$)
-   2. Choose a filter design method. Eg. Buttorworh, Chebyshev Type 1, 2 Elliptic etc
-   3. Convert analog filter to digital using techniques like bilineaer transform, impulse invariat.
-2. High-Pass Filter
-3. Band-Pass Filter
-4. Band-Stop Filter (Notch Filter / Band Reject Filter)
-5. All-Pass Filter
-6. Active Filter
-7. Passive Filter
+**Process of filter design**
+1. Define specifications / requirements
+    - Type of filter: High-pass, low-pass, band-pass, band-stop etc
+    - Cutoff frequencies $(f_c)$: One or more cutoff frequencies
+    - Passband ripple $(\delta_p)$
+    - Stopband attenuation
+    - Sampling frequency $(f_s)$ (for digital filters)
+2. Choose a filter design method
+    - Analog filters: Butterworth, Chebyshev Type I, Chebyshev Type II, Elliptic, Bessel, etc.
+    - Digital Filters: FIR (Finite Impulse Response), IIR (Infinite Impulse Response), Bilinear Transformation, Impulse Invariant, etc.
+3. Determine filter order: Calculate the order of the filter to meet the specifications. Higher order filter provide steeper roll-off but are more complex.
+4. Design the filter
+    - Analog filters: Use standard design equations or software tools to determine the components values (resistors, capacitors, inductors)
+    - Digital filters: Convert analog filter to digital using one of the method of discretization. Use algorithms or software tools to determine the filter coefficients.
+5. Implementation
+    - Analog filters: Build the circuit using calculated component values
+    - Digital filters: Implement the filter in software or hardware using calculated coefficients
+6. Verification
+    1. Simulate the filter response using software tools to ensure it meets the specifications
+    2. Test the filter with actual signals to verify the performance
+7. Optimization and iteration: If the filter does not meet the specifications, adjust the design parameters and repeat the process.
+
+**Process of digital filter design: Low-Pass Filter**
+1. Specify requirements
+    - Cutoff frequency ($f_c$)
+    - Sampling frequency ($f_s$)
+    - Passband Ripple ($\delta_p$)
+2. Choose a filter design method. Eg. Buttorworh, Chebyshev Type 1, 2 Elliptic etc
+3. Convert analog filter to digital using techniques like bilineaer transform, impulse invariat.
+
+**Process of digital filter design: High-Pass Filter**
+**Process of digital filter design: Band-Pass Filter**
+**Process of digital filter design: Band-Stop Filter**
+**Process of digital filter design: All-Pass Filter**
+**Process of digital filter design: Active Filter**
+**Process of digital filter design: Passive Filter**
