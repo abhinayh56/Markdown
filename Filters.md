@@ -46,10 +46,10 @@
 **Process of filter design**
 1. Define specifications / requirements
     - Type of filter: High-pass, low-pass, band-pass, band-stop etc
-    - Cutoff frequencies $(f_c)$: One or more cutoff frequencies
-    - Passband ripple $(\delta_p)$
+    - Cutoff frequencies $`(f_c)`$: One or more cutoff frequencies
+    - Passband ripple $`(\delta_p)`$
     - Stopband attenuation
-    - Sampling frequency $(f_s)$ (for digital filters)
+    - Sampling frequency $`(f_s)`$ (for digital filters)
 2. Choose a filter design method
     - Analog filters: Butterworth, Chebyshev Type I, Chebyshev Type II, Elliptic, Bessel, etc.
     - Digital Filters: FIR (Finite Impulse Response), IIR (Infinite Impulse Response), Bilinear Transformation, Impulse Invariant, etc.
