@@ -74,19 +74,19 @@
 3. Convert analog filter to digital using techniques like bilineaer transform, impulse invariat.
 
 **Process of digital filter design: High-Pass Filter**
-[ ] Todo
+- [ ] Todo
 
 **Process of digital filter design: Band-Pass Filter**
-[ ] Todo
+- [ ] Todo
 
 **Process of digital filter design: Band-Stop Filter**
-[ ] Todo
+- [ ] Todo
 
 **Process of digital filter design: All-Pass Filter**
-[ ] Todo
+- [ ] Todo
 
 **Process of digital filter design: Active Filter**
-[ ] Todo
+- [ ] Todo
 
 **Process of digital filter design: Passive Filter**
-[ ] Todo
+- [ ] Todo
